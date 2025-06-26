@@ -16,6 +16,7 @@ VISION CART is a smart shopping cart system that eliminates manual billing and e
 
 📊 High-Performance Inference – Optimized with TensorRT for edge deployment.
 
+
 ## Technologies Used
 | Component        | Technology                          |
 | ---------------- | ----------------------------------- |
@@ -27,6 +28,7 @@ VISION CART is a smart shopping cart system that eliminates manual billing and e
 | Frontend         | Flask Web Interface                 |
 | Model Export     | ONNX / TensorRT                     |
 | Deployment       | Edge-Optimized Setup                |
+
 
 ## Dataset Overview
 Size: 9,935 images
@@ -44,3 +46,42 @@ Test: 1%
 Preprocessing: Resize to 640×640, auto-orient
 
 Augmentation: None applied
+
+
+## System Architecture
+flowchart TD
+    A[IP Camera Input] --> B[YOLOv8 Inference]
+    B --> C[Object Tracking + Filtering]
+    C --> D[Database Lookup for Pricing]
+    D --> E[Real-Time Invoice Generation]
+    E --> F[Web Interface Display]
+    F --> G[Payment Gateway Integration]
+
+## Performance Metrics
+Detection Accuracy: 98.4% on Test Set
+
+FPS: 20 (Real-time on GPU setup)
+
+F1-Score: 0.78 at 0.378 confidence threshold
+
+Misclassification: <2%, mostly among visually similar products
+
+## Project Structure
+vision-cart/
+│
+├── dataset/                  # Roboflow-exported dataset
+├── yolov8_model/            # YOLOv8 training weights and configs
+├── app/                     # Flask-based frontend interface
+│   ├── templates/
+│   ├── static/
+│   └── app.py
+├── results/                 # Screenshots, test videos, graphs
+├── utils/                   # Helper scripts for tracking, data loading
+├── requirements.txt         # Python dependencies
+└── README.md
+
+
+## How to Run
+git clone https://github.com/yourusername/vision-cart.git
+cd vision-cart
+
