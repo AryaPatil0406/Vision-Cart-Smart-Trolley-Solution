@@ -65,6 +65,7 @@ FPS: 20 (Real-time on GPU setup)
 F1-Score: 0.78 at 0.378 confidence threshold
 
 Misclassification: <2%, mostly among visually similar products
+![Screenshot 2025-06-26 122258](https://github.com/user-attachments/assets/7f4e99a2-63be-4cff-8737-372e886c7f59)
 
 ## Project Structure
 ```
