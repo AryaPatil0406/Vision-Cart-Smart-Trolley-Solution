@@ -15,3 +15,32 @@ VISION CART is a smart shopping cart system that eliminates manual billing and e
 🔐 Fraud Prevention – Prevents misclassification and theft via persistent object tracking.
 
 📊 High-Performance Inference – Optimized with TensorRT for edge deployment.
+
+## Technologies Used
+| Component        | Technology                          |
+| ---------------- | ----------------------------------- |
+| Object Detection | YOLOv8 (Ultralytics)                |
+| Dataset Platform | Roboflow (9,935 images, 84 classes) |
+| Training Env     | Google Colab with NVIDIA T4 GPU     |
+| Inference Device | Intel i5 + NVIDIA MX450             |
+| Camera           | 6MP IP camera with night vision     |
+| Frontend         | Flask Web Interface                 |
+| Model Export     | ONNX / TensorRT                     |
+| Deployment       | Edge-Optimized Setup                |
+
+## Dataset Overview
+Size: 9,935 images
+
+Classes: 84 grocery items
+
+Split:
+
+Train: 93%
+
+Validation: 6%
+
+Test: 1%
+
+Preprocessing: Resize to 640×640, auto-orient
+
+Augmentation: None applied
