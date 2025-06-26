@@ -67,6 +67,7 @@ F1-Score: 0.78 at 0.378 confidence threshold
 Misclassification: <2%, mostly among visually similar products
 
 ## Project Structure
+```
 vision-cart/
 │
 ├── dataset/                  # Roboflow-exported dataset
