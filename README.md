@@ -81,7 +81,5 @@ vision-cart/
 └── README.md
 
 
-## How to Run
-git clone https://github.com/yourusername/vision-cart.git
-cd vision-cart
+ 
 
